@@ -1,12 +1,8 @@
-#Updated 13th June
+google.com, pub-1942905027200192, DIRECT, f08c47fec0942fa0
 #Appodeal
 appodeal.com, 246989, DIRECT
 #BidMachine
 bidmachine.io, 246989, DIRECT
-#AdMob
-google.com, pub-1942905027200192, DIRECT, f08c47fec0942fa0
-#Add other networks if applicable
-
 #Resellers
 9dotsmedia.com,122262,RESELLER,45ff185b4c4e857d
 acexchange.co.kr,1562884725,RESELLER
