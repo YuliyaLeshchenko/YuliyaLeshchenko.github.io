@@ -1,8 +1,57 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Autumn Event</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f3f3f3;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    .message {
+      color: #555;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #007aff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      transition-duration: 0.3s;
+      -webkit-appearance: none;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
   <script>
     const iosAppStore = "https://apps.apple.com/us/app/seek-find-map-adventure/id6737922261";
     const scheme = "seekfind://event?eventId=autumn2025";
@@ -10,8 +59,7 @@
     function openDeepLink() {
       window.location = scheme;
       setTimeout(() => {
-        const ua = navigator.userAgent || "";
-         location.href = iosAppStore;
+        location.href = iosAppStore;
       }, 800);
     }
 
@@ -19,9 +67,13 @@
   </script>
 </head>
 <body>
-  <p>Opening event… If nothing happens, <a id="open" href="#">click here</a>.</p>
+  <div class="container">
+    <h1>Autumn Event</h1>
+    <p class="message">Opening event… If nothing happens, click below:</p>
+    <a id="open" href="#"><button>Open Event</button></a>
+  </div>
   <script>
-    document.getElementById('open').href = scheme;
+    document.getElementById('open').href = "seekfind://event?eventId=autumn2025";
   </script>
 </body>
 </html>
