@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Open Autumn Event</title>
+  <script>
+    const iosAppStore = "https://apps.apple.com/us/app/seek-find-map-adventure/id6737922261";
+    const scheme = "seekfind://event?eventId=autumn2025";
+
+    function openDeepLink() {
+      window.location = scheme;
+      setTimeout(() => {
+        const ua = navigator.userAgent || "";
+         location.href = iosAppStore;
+      }, 800);
+    }
+
+    window.onload = openDeepLink;
+  </script>
+</head>
+<body>
+  <p>Opening event… If nothing happens, <a id="open" href="#">click here</a>.</p>
+  <script>
+    document.getElementById('open').href = scheme;
+  </script>
+</body>
+</html>
